@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(30, 28, 25);
+    color: white;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+}
+h1{
+    font-size: 5vh;
+        font-family: "Pacifico", serif;
+        font-weight: 400;
+      
+}
+.choices{
+    padding-top: 12vh;
+    height: 40vh;
+    display: flex;
+    justify-content:center;
+    gap: 5vh;
+    align-items: center;
+}
+img{
+    height: 30vh;
+    width: 30vh;
+}
+#rock:hover{
+    filter:drop-shadow(0 0 1.5rem rgba(231, 6, 96, 0.9));
+    cursor: pointer;
+}
+#paper:hover{
+    filter:drop-shadow(0 0 1.5rem rgba(249, 249, 35, 0.9));
+    cursor: pointer;
+}
+#scissors:hover{
+    filter:drop-shadow(0 0 1.5rem rgba(27, 255, 232, 0.9));
+    cursor: pointer;
+}
+
+#rock:active{
+    filter:drop-shadow(0 0 2rem rgba(255, 255, 255, 0.9));
+    transform: scale(0.8);
+}
+#paper:active{
+    filter:drop-shadow(0 0 2rem rgba(255, 255, 255, 0.9));
+    transform: scale(0.8);
+}
+#scissors:active{
+    filter:drop-shadow(0 0 2rem rgba(255, 255, 255, 0.9));
+    transform: scale(0.8);
+}
+.score-board{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+}
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#user-score,#comp-score{
+    font-size: 4rem;
+
+}
+.msg-container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#msg{
+    font-size: 2rem;
+    background-color: aliceblue;
+    color: black;
+    font-family: cursive;
+    padding: 1rem;
+    border-radius: 2rem;
+}
